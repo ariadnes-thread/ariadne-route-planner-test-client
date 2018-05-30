@@ -15,5 +15,5 @@ Usage
 - `node client.js`
 
 Notes
-- Through the magic of gRPC, a call to `stub.PlanRoute` in the client is equivalent to a call to `RoutePlanner.PlanRoute` in `start_server.py`. `PlanRoute` chooses which router is called.
+- Through the magic of gRPC, a call to `stub.PlanRoute` in the client is equivalent to a call to `RoutePlanner.PlanRoute` in `start_server.py`. `RoutePlanner.PlanRoute` chooses which router is called.
 - Thus, for a router X to be called in the backend, first the logic to dispatch to X must be added to `RoutePlanner.PlanRoute` in `start_server.py`. Then, the request data must meet the requirements to dispatch to X.
