@@ -1,0 +1,9 @@
+{
+    "name": "ariadne-route-planner-client",
+    "version": "0.1.0",
+    "description": "Node client for ariadne route-planner",
+    "license": "BSD-3-Clause",
+    "dependencies": {
+        "grpc": "^1.11.3"
+    }
+}
