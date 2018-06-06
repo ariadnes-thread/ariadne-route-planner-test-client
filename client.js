@@ -4,8 +4,11 @@ var util = require("util");
 var routeplanner = grpc.load("planner.proto");
 
 // Create stub
+// Use ariadnes-thread.me:1235 to run on the production route planner.
 var stub = new routeplanner.RoutePlanner(
-    'localhost:1235', grpc.credentials.createInsecure());
+    'localhost:1235',
+    // 'ariadnes-thread.me:1235',
+    grpc.credentials.createInsecure());
 
 var reqdata = {
     origin: {latitude: 34.140003, longitude: -118.122775},
